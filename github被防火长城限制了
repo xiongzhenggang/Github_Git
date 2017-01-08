@@ -1,0 +1,11 @@
+github被防火长城限制了？？怎么办？
+
+原来是这个域名github.global.ssl.fastly.net被限制。很简单，去查查这个域名对应的ip，然后修改自己电脑的hosts文件
+
+上IPAddress.com即可查到最新的ip。
+
+打开C->windows->system32->driver->etc->hosts,在最后一行加入如下一句：
+
+23.235.43.249   github.global.ssl.fastly.net （注：此ip是写此文的时候最新的，要根据实际查到的替换）
+
+这样本来5-6k的传输速度提高到60-120k了！！

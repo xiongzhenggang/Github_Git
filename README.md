@@ -7,6 +7,19 @@ git help <command> # 显示command的help
 
 git show # 显示某次提交的内容 git show $id
 
+git clone git@github.com:xiongzhenggang/maven-framework-project.git #克隆github仓库到本地
+github.com 上有两种源码获取方式，一是 git clone，一是直接下载 master.zip，后者明显速度快于前者，可以考虑；
+1）用 proxychains 这类透明代理，间接走系统中运行的代理工具中转；
+2）用 git 内置代理，直接走系统中运行的代理工具中转，比如，你的 SS 本地端口是 1080，那么可以如下方式走代理
+```
+git config --global http.proxy socks5://127.0.0.1:1080
+git config --global https.proxy socks5://127.0.0.1:1080
+```
+也可以如下方式停走代理
+```
+git config --global http.proxy ""
+git config --global https.proxy ""
+```
 git co -- <file> # 抛弃工作区修改
 
 git co . # 抛弃工作区修改

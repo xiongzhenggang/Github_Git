@@ -3,21 +3,29 @@
 Git常用命令
 基本的操作流程：
 1、cd 进入相应的文件夹中
+
 2、把当前的文件夹更改为git仓库；git init
+
 3、添加文件a、单个文件 git readme.txt
  b，多个文件  git add -A
+ 
 4、提交修改：git commit -m "修改的备注"
 5、查看是否还有未提交的： git status
+
 6、查看最近的日志；git log
+
 7、版本回退；a，回退一个：git reset hard -HEAD^
             b，回退两个:git reset hard -HEAD^^
             c，回退多个:git reset hard -HEAD~100
 8、（第一次链接）远程仓库提交：git remote add origin 你复制的地址
-9、（第二次以后）远程仓库提交：git push
+
+9、（第二次以后）远程仓库提交：git push 
 查看、添加、提交、删除、找回，重置修改文件
 git help <command> # 显示command的help
 
 git show # 显示某次提交的内容 git show $id
+
+有時候代理失敗，使用http协议：git config --global url.ssh://git@github.com/.insteadOf https://github.com/
 
 git clone git@github.com:xiongzhenggang/maven-framework-project.git #克隆github仓库到本地
 github.com 上有两种源码获取方式，一是 git clone，一是直接下载 master.zip，后者明显速度快于前者，可以考虑；

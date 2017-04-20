@@ -1,4 +1,4 @@
-# myproperts
+# git 和 github相关
 本地的仓库
 Git常用命令
 基本的操作流程：

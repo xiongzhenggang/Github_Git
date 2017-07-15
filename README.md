@@ -2,6 +2,7 @@
 本地的仓库
 Git常用命令
 基本的操作流程：
+工作区-->add（添加）-->暂存区-->commit（提交）-->本地仓库-->push（推行）-->远程仓库-->pull(拉去fetch合并merge)-->本地仓库、暂存区、工作区
 1、cd 进入相应的文件夹中
 
 2、把当前的文件夹更改为git仓库；git init
@@ -212,4 +213,4 @@ git branch --set-upstream master origin/master
 
 git branch --set-upstream develop origin/develop
 
-add test
+add test again

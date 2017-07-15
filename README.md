@@ -17,6 +17,10 @@ Git常用命令
 7、版本回退；a，回退一个：git reset hard -HEAD^
             b，回退两个:git reset hard -HEAD^^
             c，回退多个:git reset hard -HEAD~100
+            
+git revert 是生成一个新的提交来撤销某次提交，此次提交之前的commit都会被保留
+git reset 是回到某次提交，提交及之前的commit都会被保留，但是此次之后的修改都会被退回到暂存区
+
 8、（第一次链接）远程仓库提交：git remote add origin 你复制的地址
 
 9、（第二次以后）远程仓库提交：git push 

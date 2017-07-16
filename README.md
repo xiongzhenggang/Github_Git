@@ -29,6 +29,16 @@ git help <command> # 显示command的help
 
 git show # 显示某次提交的内容 git show $id
 
+* 需要注意的地方：当远程仓库和本地修改同一处的时候pull会因为冲突，然后需要手动解决如下：
+当远程仓库修改的内容为：add test no 同一的内容在本地提交的时候为：add test again 。那么执行完pull后如下：
+```xml
+<<<<<<< HEAD
+add test again
+=======
+add test no
+>>>>>>> bc8cd865b85f75642ad3fddd6653bd269ec7bc01
+```
+然后手动合并如下add test test后重新提交推送
 有時候代理失敗，使用http协议：git config --global url.ssh://git@github.com/.insteadOf https://github.com/
 
 git clone git@github.com:xiongzhenggang/maven-framework-project.git #克隆github仓库到本地

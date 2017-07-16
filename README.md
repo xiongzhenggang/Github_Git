@@ -224,6 +224,8 @@ git branch --set-upstream master origin/master
 git branch --set-upstream develop origin/develop
 
 
-add test master
+
+add test master-merage-dev
+
 
 
